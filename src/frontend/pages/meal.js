@@ -13,6 +13,7 @@ console.log(meals);
     <p>${meal.description}<br><br>Created Date:${meal.created_date}<br><br>Location:${meal.location}<br><br>Price:${meal.price}</p>
     <div class="web-form">
     <form action="../../api/reservations" method="post">
+            
             <!---<div class="form-group">
                 <label>meal_id</label>
                 <input class="form-control" type="number" name="meal_id" value = "${meal.id}" />
@@ -106,7 +107,7 @@ window.handleMealRequest = async (params) => {
               </div>
               <div class="form-group">
                   <label>number_of_guests</label>
-                  <input class="form-control" type="number" name="number_of_guests" min="1" max="20" placeholder="Number of persons<${meal.max_reservations}" />
+                  <input class="form-control" type="number" name="number_of_guests" min="1" max="20" placeholder="choose number from a list" />
                 </div>
                 <!---<div class="form-group">
                   <label>created_date</label>

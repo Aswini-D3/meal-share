@@ -20,7 +20,7 @@ console.log(meals);
               </div>
               <div class="form-group">
                   <label>created_date</label>
-                  <input class="form-control" type="text" name="created_date" value = "${meal.created_date}"/>
+                  <input class="form-control" type="text" name="created_date" value = "${meal.when}"/>
                   </div>
                   <div class="form-group">
                   <label>location</label>

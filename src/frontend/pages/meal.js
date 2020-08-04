@@ -19,8 +19,8 @@ console.log(meals);
                 <input class="form-control" type="number" name="meal_id" value = "${meal.id}" />
               </div>
               <div class="form-group">
-                  <label>created_date</label>
-                  <input class="form-control" type="text" name="created_date" value = "${meal.when}"/>
+                  <label>When</label>
+                  <input class="form-control" type="text" name="when" value = "${meal.when}"/>
                   </div>
                   <div class="form-group">
                   <label>location</label>

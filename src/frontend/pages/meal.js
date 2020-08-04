@@ -10,7 +10,7 @@ console.log(meals);
     </div>
     <div class="content-wrapper">
     <h4>${meal.id}.${meal.title}</h4><br>
-    <p>${meal.description}<br><br>When:${meal.when}<br><br>Location:${meal.location}<br><br>Price:${meal.price}</p>
+    <p>${meal.description}<br><br>When: ${meal.when}<br><br>Location: ${meal.location}<br><br>Price: ${meal.price}</p>
     <div class="web-form">
     <form action="../../api/reservations" method="post">
             

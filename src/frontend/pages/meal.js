@@ -9,11 +9,11 @@ console.log(meals);
     <button class="btn link-button" href="meals" data-navigo>Available Reservations</button>
     </div>
     <div class="content-wrapper">
-    <h4>${meal.title}</h4><br>
-    <p>${meal.description}<br><br>Price:${meal.price}</p>
+    <h4>${meal.id}.${meal.title}</h4><br>
+    <p>${meal.description}<br><br>Created Date:${meal.created_date}<br><br>Location:${meal.location}<br><br>Price:${meal.price}</p>
     <div class="web-form">
     <form action="../../api/reservations" method="post">
-            <div class="form-group">
+            <!---<div class="form-group">
                 <label>meal_id</label>
                 <input class="form-control" type="number" name="meal_id" value = "${meal.id}" />
               </div>
@@ -25,7 +25,7 @@ console.log(meals);
                   <label>location</label>
                   <input class="form-control" type="text" name="location" value= "${meal.location}"/>
                   
-                </div>`
+                </div>--->`
    });
   }
 window.handleMealRequest = async (params) => {
@@ -106,7 +106,7 @@ window.handleMealRequest = async (params) => {
               </div>
               <div class="form-group">
                   <label>number_of_guests</label>
-                  <input class="form-control" type="number" name="number_of_guests" min="1" max="20" placeholder="Choose a number from list" />
+                  <input class="form-control" type="number" name="number_of_guests" min="1" max="20" placeholder="Number of persons<${meal.max_reservations}" />
                 </div>
                 <!---<div class="form-group">
                   <label>created_date</label>

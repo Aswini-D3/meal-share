@@ -11,8 +11,8 @@ console.log(meals);
     <div class="content-wrapper">
     <h4>${meal.id}.${meal.title}</h4><br>
     <p>${meal.description}<br><br>When: ${meal.when}<br><br>Location: ${meal.location}<br><br>Price: ${meal.price}</p>
-    <div class="web-form">
-    <form action="../../api/reservations" method="post">
+    <!---<div class="web-form">
+    <form action="../../api/reservations" method="post">-->
             
             <!---<div class="form-group">
                 <label>meal_id</label>
@@ -92,6 +92,8 @@ window.handleMealRequest = async (params) => {
           </div>
           <div class="content-wrapper">-->
           ${showSingleMeal(oneMeal)}
+          <div class="web-form">
+          <form action="../../api/reservations" method="post">
               <div class="form-group">
                 <label>name</label>
                 <input class="form-control" type="text" name="name" placeholder="Enter name" />

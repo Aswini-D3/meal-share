@@ -94,6 +94,10 @@ window.handleMealRequest = async (params) => {
           ${showSingleMeal(oneMeal)}
           <div class="web-form">
           <form action="../../api/reservations" method="post">
+          <div class="form-group">
+                <label>meal_id</label>
+                <input class="form-control" type="number" name="meal_id" value = "${meal.id}" />
+              </div>
               <div class="form-group">
                 <label>name</label>
                 <input class="form-control" type="text" name="name" placeholder="Enter name" />
